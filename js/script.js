@@ -130,37 +130,37 @@ let let_g = []
 for (let item of shop) {
     if (item.brand[0] == "B") {
         let_b.push(item)
-    }
+    }//dop1
     if (item.year <= 2010) {
         item.old = true
         old.push(item)
-
+        //dop2.1
         if (item.old == true) {
             item.garantiya = false
             garantiya.push(item)
-        }
+        }//dop3
 
     }
     if (item.year >= 2010) {
         item.notold = true
         notold.push(item)
-    }
+    }//dop2.2
     if (item.year >= 2010) {
         item.garantiya_true = "1 year"
         garantiya_true.push(item)
-    }
+    }//dop3.2
     if (item.price >= 200000) {
         item.luxury = true
         luxury.push(item)
-    }
+    }//dop4
     else {
         item.luxury = false
-    }
+    }//dop4
     if (item.brand[0] == "G") {
 
        delete item.brand
        let_g.push(item)
-    }
+    }//dop5
 }
 
 
